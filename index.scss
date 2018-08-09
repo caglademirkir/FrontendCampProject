@@ -1,4 +1,3 @@
-@import 'normalize.css'; 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 $dark-grey: #33333a;
@@ -6,302 +5,530 @@ $white: #ffffff;
 $black: #030303;
 $background : #fcfcfc;
 $turuncu: #ff6008;
+$list : #dedede;
 
-html{
-    width: 1440px;
-    height: 5183px;
 
-    .top{
-        width: 1440px;
-        height: 40px;
-        background-color: $dark-grey;
-        position: relative;
+.top{
+    width: 100%;
+    height: 40px;
+    background-color: $dark-grey;
+    position: relative;
 
-        p{
-            color: $white;
-            width: 212px;
-            height: 14px;
-            font-family: Roboto;
-            font-size: 12px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            align-content: center;
-            margin: 15px 699px 11px 529px;
-            position: absolute;
-        }            
-    }
+    h4{
+        color: $white;
+        font-family: Roboto;
+        font-size: 12px;
+        position: absolute;
+        margin-left: 50%;
+    }            
+}
 
-    .menu{
-        width: 1440px;
-        height: 80px;
-        background-color: $white;
-        background-color: var(--white);
-        box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-        position: relative;
-
+.menu{
+    width: 100%;
+    height: 80px;
+    background-color: $white;
+    #nav1{
+        list-style-type: none;
         .matter{
-            width: 120px;
-            height: 22px;
-            object-fit: contain;
             margin-left: 150px;
-            margin-right: 1170px;
             margin-top: 28px;
-            margin-bottom: 30px;
-            position: absolute;
+            font-weight: 500;
+            font-size: 40px;
+            float: left;
         }
 
         .shop{
-            width: 37px;
-            height: 40px;
-            object-fit: contain;
             font-size: 12px;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 3.33;
-            letter-spacing: 1px;
-            color: $dark-grey;
-            margin: 20px 1092px 20px 311px;
-            position: absolute;
+            margin-top: 37px;
+            float: left;
+            margin-left: 34px;
         }
 
-       .fabric{
-            width: 47px;
-            height: 40px;
-            object-fit: contain;
+        .fabric{
             font-size: 12px;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 3.33;
-            letter-spacing: 1px;
-            color: $dark-grey;
-            margin: 20px 994px 20px 399px;
-            position: absolute;
+            margin-top: 37px;
+            float: left;
+            margin-left: 51px;
         }
 
         .journal{
-            width: 62px;
-            height: 40px;
-            object-fit: contain;
             font-size: 12px;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 3.33;
-            letter-spacing: 1px;
-            color: $dark-grey;
-            margin: 20px 880px 20px 498px;
-            position: absolute;
+            margin-top: 37px;
+            float: left;
+            margin-left: 52px;
         }
 
         .about{
-            width: 47px;
-            height: 40px;
-            object-fit: contain;
             font-size: 12px;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 3.33;
-            letter-spacing: 1px;
-            color: $dark-grey;
-            margin: 20px 780px 20px 613px;
-            position: absolute;
+            margin-top: 37px;
+            float: left;
+            margin-left: 53px;
         }
-
+    }
+    #nav2{
+        list-style-type: none;
         .login{
-            width: 41px;
-            height: 40px;
-            object-fit: contain;
             font-size: 12px;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 3.33;
-            letter-spacing: 1px;
-            color: $dark-grey;
-            position: absolute;
-            margin: 20px 329px 20px 1070px;
+            margin-top: 37px;
+            float: left;
+            margin-left: 410px;
         }
 
         .search{
-            width: 20px;
-            height: 20px;
-            object-fit: contain;
-            position: absolute;
-            margin: 30px 280px 30px 1140px;
+            margin-top: 31px;
+            float: left;
+            margin-left: 24px;
         }
 
         .like{
-            width: 20px;
-            height: 19px;
-            object-fit: contain;
-            position: absolute;
-            margin: 31px 220px 30px 1200px;
+            margin-top: 31px;
+            float: left;
+            margin-left: 40px;
         }
 
         .bag{
-            width: 16px;
-            height: 20px;
-            object-fit: contain;
-            position: absolute;
-            margin: 30px 162px 30px 1262px;
+            margin-top: 31px;
+            float: left;
+            margin-left: 42px;
         }
-    }    
+    }
+}    
 
-    .img{
+.slides{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .left{
+        position: absolute;
+        top: 50%;
+    }
+    .right{
+        position: absolute;
+        float: right;
+        top: 50%;       
+        right: 0;      
+    }
+    .parfume{
+        top: 30%;
+        position: absolute;
+        left: 60%;
+        width: 458px;
+        font-family: Roboto;
+        font-size: 60px;
+        line-height: 1.33;
+        color: $white;
+    }
 
-        position: relative;
+    .shop-now{
+        float: left;
+        top: 60%;
+        left: 60%;
+        width: 79px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.67;
+        letter-spacing: 2px;
+        color: $white;
+        position: absolute;
+        
+    }
+}    
 
-        .homepageImg{
-            width: 1440px;
-            height: 600px;
-            object-fit: contain;
-            position: absolute;
+.content{
+    width: 100%;
+    background-color: $background;
+    float: left;
+    padding-top: 5%;
+    h2{
+        text-align: center;
+        font-family: Roboto;
+        line-height: 1.43;
+        color: $dark-grey;
+        font-weight: 500;
+    }
+    .con{
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            width: 748px;
         }
 
-        .parfume{
-            width: 458px;
-            height: 160px;
+        @media screen and (min-width: 1024px) {
+            width: 1004px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 1260px;
+        }
+
+        .box1{
+            float: left;
+            position: relative;
+            width: 50%;
+
+            @media screen and (min-width: 768px) {
+                width: (748px / 3);
+            }
+    
+            @media screen and (min-width: 1024px) {
+                width: (1004px / 4);
+            }
+    
+            @media screen and (min-width: 1280px) {
+                width: (1260px / 4);
+            }
+
+            .new{
+                background-color: $turuncu;
+                width: 50px;
+                height: 20px;
+                position: absolute;
+                margin-top: 20px;
+                margin-left: 20px;
+                text-align: center;
+                color: $white;
+            }
+            .view{
+                width: 180px;
+                height: 30px;
+                position: absolute;
+                background-color: $dark-grey;
+                color: $white;
+                text-align: center;
+                margin-left: 57px;
+                top: 50%;
+                padding-top: 10px;
+                display: block;
+                margin-top: -25px;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                h4{
+                    font-family: Roboto;
+                    font-size: 16px;
+                    color: $dark-grey;
+                    width: 263px;
+                    margin-left: 10px;
+                }
+                .price{
+                    font-family: Roboto;
+                    font-size: 14px;
+                    color: $dark-grey;
+                    font-weight: bold;
+                    margin-left: 10px;
+                }
+                img{
+                    padding: 10px;
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
+.about-matter{
+    width: 100%;
+    background-color: $white;
+    
+    h2{
+        font-family: Roboto;
+        color: $black;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .img-about{
+        float: right;
+        margin-right: -55px;
+    }
+
+    .topDiv{
+        padding-left: 50px;
+        .img-common{
+            font-size:18px; 
+            float: left;
+            color: $black;
+            text-align: left;
             font-family: Roboto;
-            font-size: 60px;
-            font-weight: normal;
+            word-wrap: break-word;
+            font-weight: 300;
             font-style: normal;
-            font-stretch: normal;
-            line-height: 1.33;
-            letter-spacing: normal;
-            color: $white;
-            margin: 175px 149px 265px 833px; 
-            position: absolute;
+            line-height: 27px;
+            margin-left: 20px;
+        }
+        .img-fontType
+        {
+            font-weight: normal;
+            line-height: 24px;
+            letter-spacing: 1px;
         }
 
-        .shop-now{
-            width: 79px;
-            height: 20px;
+        .img-exp2{
+            font-size:12px; 
+        }
+        
+        .img-exp3{
+            font-weight: normal;
+        }
+
+        .img-exp4{
+            font-size:12px; 
+        }
+
+        .img-exp5{
+            list-style-type: none;
+            font-weight: normal;
+            padding-left: 0px;
+        }
+
+        .img-exp6{
+            font-size:12px; 
+        }
+
+        .img-exp7{
+            list-style-type: none;
+            padding-left: 0px;
+        } 
+    }   
+}
+
+.about-explore{
+    width: 100%;
+    background-color: $background;
+    padding-top: 5%;
+    h2{
+        font-family: Roboto;
+        color: $black;
+        text-align: center;
+    }
+    .style-common{
+        //float: left;
+        //padding-left: 169px;
+        //max-width: 50%;
+        
+        ul{
+            list-style-type: none;
+            padding-left: 0px;
+            li{
+                float: left;
+                line-height: 3.33;
+                font-size: 12px;
+                letter-spacing: 1px;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    h3{
+        font-family: Roboto;
+        font-size: 28px;
+        line-height: 1.67;
+        color: $dark-grey;
+        float: left;
+    }
+    h4{
+        font-family: Roboto;
+        font-size: 24px;
+        line-height: 1.67;
+        color: $dark-grey;
+        float: left;
+    }
+    p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.56;
+        color: $dark-grey;
+        float: left;
+    }
+    .btn{
+        background-color: $dark-grey;
+        color: $white;
+        font-family: Roboto;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-left: 43%;
+        margin-right:43%;
+    }
+}
+h2{
+    font-family: Roboto;
+    color: $black;
+    text-align: center;
+}
+.about-shop{
+    width: 100%;
+    float: left;
+    padding: 5%;
+
+    .content-shop{
+
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            width: 748px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 1004px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 1260px;
+        }
+
+        .box{
+            float: left;
+            position: relative;
+            width: 50%;
+
+            @media screen and (min-width: 768px) {
+                width: (748px / 3);
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: (1004px / 4);
+            }
+
+            @media screen and (min-width: 1280px) {
+                width: (1260px / 4);
+            }
+
+            .rectangle1{
+                background-color: $white;
+                position: absolute;
+                bottom: 10%;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-family: Roboto;
+                font-size: 18px;
+                color: $black;
+            }
+            a{
+                display: block;
+            }
+            img{
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}
+.about-video{
+    width: 100%;
+    float: left;
+    padding-top: 5%;
+    .content-video{
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            width: 748px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 1004px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 1260px;
+        }
+    
+        .box2{
+            float: left;
+            position: relative;               
+        }
+        img{
+            width: 100%;
+            padding: 10px;
+
+        }
+        .btn2{
+            background-color: $dark-grey;
+            color: $white;
             font-family: Roboto;
             font-size: 12px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.67;
             letter-spacing: 2px;
             text-align: center;
-            color: $white;
+            margin-left: 43%;
+            margin-right:43%;
+        }
+/*         .img4{
+            left: 36%;
+            margin-top: 19%;
             position: absolute;
-            margin: 361px 568px 219px 832.5px;
-        }
+        } */
+    }
+}
 
-        .back{
-            width: 50px;
-            height: 90px;
-            border-radius: 0px 45px 45px 0px;
-            background-color: rgba(0, 0, 0, 0.4);
-            position: absolute;       
-            margin-top: 254px;
-            margin-bottom: 256px;
-
-            .left-arrow{
-                width: 30px;
-                height: 15px;
-                transform: rotate(-90deg);
-                border: solid 1px #ffffff;
-                position: absolute;
-                margin: 37.5px 7.5px 37.5px 2.5px;
-            }
-        }
-
-        .next{
-            width: 50px;
-            height: 90px;
-            border-radius: 45px 0px 0px 45px;
-            background-color: rgba(0, 0, 0, 0.4);
-            position: absolute;       
-            margin-top: 255px;
-            margin-bottom: 255px;
-            margin-left: 1390px;
-        }
+.logo-box{
+    position: relative;
+    width: 100%;
+    img{
+        width: 100%;
 
     }
+}
 
-    .content{
-        width: 1440px;
-        height: 1210px;
-        background-color: $background;
-        position: relative;
-        margin-top: 720px;
-
-        p{
-            width: 165px;
-            height: 60px;
-            font-family: Roboto;
-            font-size: 42px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.43;
-            letter-spacing: normal;
-            text-align: center;
-            color: $dark-grey;
-            margin: 63px 637.5px 0px 637.5px;
-        }
-
-        .list-clothes{
-            position: absolute;
-            margin-left: 150px;
-            margin-right: 149px;
-
-            p{
-                width: 263px;
-                height: 50px;
-                font-family: Roboto;
-                font-size: 16px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.56;
-                letter-spacing: normal;
-                color: $dark-grey;
-                margin-left: 0px;
-                margin-top: 13px;
-                float: left;
-                text-align: left;
-            }
-
-            .price{
-                width: 263px;
-                height: 30px;
-                font-family: Roboto;
-                font-size: 14px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 2.14;
-                letter-spacing: normal;
-                color: $dark-grey;
-                margin-top: 0px;
-            }
-        }
-    }   
-
-    .about-matter{
-        p{
-            width: 246px;
-            height: 60px;
-            font-family: Roboto;
-            font-size: 42px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.43;
-            letter-spacing: normal;
-            text-align: center;
-            color: $dark-grey;
-            margin: 0px 596.5px 27px 597.5px;
-        }
+footer{
+    position: relative;
+    width: 100%;
+    background-color: $dark-grey;
+    float: left;
+    .row{
+        margin-left: 10%;
     }
- 
+
+    h6{
+        font-family: Roboto;
+        font-size: 18px;
+        color: $white;
+        line-height: 1.67;
+        margin-top: 10%;
+    }
+    ul{
+        list-style-type: none;
+        color: $white;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 1.79;
+        padding: 0px;
+        color: $list;
+        img{
+            float: left;
+            padding: 3%;
+        }
+
+
+    }
+    .row8 .row9{
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .col-sm-4 {
+        float: left;
+    }
+    .email{
+        border: solid 1px #666666;
+    }
+    .btn3{
+        font-size: 12px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 2px;
+    }
+    .btn-subscribe{
+        margin: 34%;
+    }
+    p{
+        font-family: Roboto;
+        font-size: 14px;
+        color: $list;
+        text-align: center;
+    }
 }

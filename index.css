@@ -1,244 +1,399 @@
-@import url(normalize.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-html {
-  width: 1440px;
-  height: 5183px; }
-  html .top {
-    width: 1440px;
-    height: 40px;
-    background-color: #33333a;
-    position: relative; }
-    html .top p {
-      color: #ffffff;
-      width: 212px;
-      height: 14px;
-      font-family: Roboto;
-      font-size: 12px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      align-content: center;
-      margin: 15px 699px 11px 529px;
-      position: absolute; }
-  html .menu {
-    width: 1440px;
-    height: 80px;
-    background-color: #ffffff;
-    background-color: var(--white);
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-    position: relative; }
-    html .menu .matter {
-      width: 120px;
-      height: 22px;
-      object-fit: contain;
+.top {
+  width: 100%;
+  height: 40px;
+  background-color: #33333a;
+  position: relative; }
+  .top h4 {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    position: absolute;
+    margin-left: 50%; }
+
+.menu {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff; }
+  .menu #nav1 {
+    list-style-type: none; }
+    .menu #nav1 .matter {
       margin-left: 150px;
-      margin-right: 1170px;
       margin-top: 28px;
-      margin-bottom: 30px;
-      position: absolute; }
-    html .menu .shop {
-      width: 37px;
-      height: 40px;
-      object-fit: contain;
+      font-weight: 500;
+      font-size: 40px;
+      float: left; }
+    .menu #nav1 .shop {
       font-size: 12px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 3.33;
-      letter-spacing: 1px;
-      color: #33333a;
-      margin: 20px 1092px 20px 311px;
-      position: absolute; }
-    html .menu .fabric {
-      width: 47px;
-      height: 40px;
-      object-fit: contain;
+      margin-top: 37px;
+      float: left;
+      margin-left: 34px; }
+    .menu #nav1 .fabric {
       font-size: 12px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 3.33;
-      letter-spacing: 1px;
-      color: #33333a;
-      margin: 20px 994px 20px 399px;
-      position: absolute; }
-    html .menu .journal {
-      width: 62px;
-      height: 40px;
-      object-fit: contain;
+      margin-top: 37px;
+      float: left;
+      margin-left: 51px; }
+    .menu #nav1 .journal {
       font-size: 12px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 3.33;
-      letter-spacing: 1px;
-      color: #33333a;
-      margin: 20px 880px 20px 498px;
-      position: absolute; }
-    html .menu .about {
-      width: 47px;
-      height: 40px;
-      object-fit: contain;
+      margin-top: 37px;
+      float: left;
+      margin-left: 52px; }
+    .menu #nav1 .about {
       font-size: 12px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 3.33;
-      letter-spacing: 1px;
-      color: #33333a;
-      margin: 20px 780px 20px 613px;
-      position: absolute; }
-    html .menu .login {
-      width: 41px;
-      height: 40px;
-      object-fit: contain;
+      margin-top: 37px;
+      float: left;
+      margin-left: 53px; }
+  .menu #nav2 {
+    list-style-type: none; }
+    .menu #nav2 .login {
       font-size: 12px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 3.33;
-      letter-spacing: 1px;
-      color: #33333a;
-      position: absolute;
-      margin: 20px 329px 20px 1070px; }
-    html .menu .search {
-      width: 20px;
-      height: 20px;
-      object-fit: contain;
-      position: absolute;
-      margin: 30px 280px 30px 1140px; }
-    html .menu .like {
-      width: 20px;
-      height: 19px;
-      object-fit: contain;
-      position: absolute;
-      margin: 31px 220px 30px 1200px; }
-    html .menu .bag {
-      width: 16px;
-      height: 20px;
-      object-fit: contain;
-      position: absolute;
-      margin: 30px 162px 30px 1262px; }
-  html .img {
-    position: relative; }
-    html .img .homepageImg {
-      width: 1440px;
-      height: 600px;
-      object-fit: contain;
-      position: absolute; }
-    html .img .parfume {
-      width: 458px;
-      height: 160px;
+      margin-top: 37px;
+      float: left;
+      margin-left: 410px; }
+    .menu #nav2 .search {
+      margin-top: 31px;
+      float: left;
+      margin-left: 24px; }
+    .menu #nav2 .like {
+      margin-top: 31px;
+      float: left;
+      margin-left: 40px; }
+    .menu #nav2 .bag {
+      margin-top: 31px;
+      float: left;
+      margin-left: 42px; }
+
+.slides {
+  width: 100%;
+  position: relative; }
+  .slides img {
+    width: 100%; }
+  .slides .left {
+    position: absolute;
+    top: 50%; }
+  .slides .right {
+    position: absolute;
+    float: right;
+    top: 50%;
+    right: 0; }
+  .slides .parfume {
+    top: 30%;
+    position: absolute;
+    left: 60%;
+    width: 458px;
+    font-family: Roboto;
+    font-size: 60px;
+    line-height: 1.33;
+    color: #ffffff; }
+  .slides .shop-now {
+    float: left;
+    top: 60%;
+    left: 60%;
+    width: 79px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: 2px;
+    color: #ffffff;
+    position: absolute; }
+
+.content {
+  width: 100%;
+  background-color: #fcfcfc;
+  float: left;
+  padding-top: 5%; }
+  .content h2 {
+    text-align: center;
+    font-family: Roboto;
+    line-height: 1.43;
+    color: #33333a;
+    font-weight: 500; }
+  .content .con {
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .content .con {
+        width: 748px; } }
+    @media screen and (min-width: 1024px) {
+      .content .con {
+        width: 1004px; } }
+    @media screen and (min-width: 1280px) {
+      .content .con {
+        width: 1260px; } }
+    .content .con .box1 {
+      float: left;
+      position: relative;
+      width: 50%; }
+      @media screen and (min-width: 768px) {
+        .content .con .box1 {
+          width: 249.33333px; } }
+      @media screen and (min-width: 1024px) {
+        .content .con .box1 {
+          width: 251px; } }
+      @media screen and (min-width: 1280px) {
+        .content .con .box1 {
+          width: 315px; } }
+      .content .con .box1 .new {
+        background-color: #ff6008;
+        width: 50px;
+        height: 20px;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+        color: #ffffff; }
+      .content .con .box1 .view {
+        width: 180px;
+        height: 30px;
+        position: absolute;
+        background-color: #33333a;
+        color: #ffffff;
+        text-align: center;
+        margin-left: 57px;
+        top: 50%;
+        padding-top: 10px;
+        display: block;
+        margin-top: -25px; }
+      .content .con .box1 a {
+        display: block;
+        text-decoration: none; }
+        .content .con .box1 a h4 {
+          font-family: Roboto;
+          font-size: 16px;
+          color: #33333a;
+          width: 263px;
+          margin-left: 10px; }
+        .content .con .box1 a .price {
+          font-family: Roboto;
+          font-size: 14px;
+          color: #33333a;
+          font-weight: bold;
+          margin-left: 10px; }
+        .content .con .box1 a img {
+          padding: 10px;
+          width: 100%; }
+
+.about-matter {
+  width: 100%;
+  background-color: #ffffff; }
+  .about-matter h2 {
+    font-family: Roboto;
+    color: #030303;
+    font-weight: 500;
+    text-align: center; }
+  .about-matter .img-about {
+    float: right;
+    margin-right: -55px; }
+  .about-matter .topDiv {
+    padding-left: 50px; }
+    .about-matter .topDiv .img-common {
+      font-size: 18px;
+      float: left;
+      color: #030303;
+      text-align: left;
       font-family: Roboto;
-      font-size: 60px;
+      word-wrap: break-word;
+      font-weight: 300;
+      font-style: normal;
+      line-height: 27px;
+      margin-left: 20px; }
+    .about-matter .topDiv .img-fontType {
       font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.33;
-      letter-spacing: normal;
+      line-height: 24px;
+      letter-spacing: 1px; }
+    .about-matter .topDiv .img-exp2 {
+      font-size: 12px; }
+    .about-matter .topDiv .img-exp3 {
+      font-weight: normal; }
+    .about-matter .topDiv .img-exp4 {
+      font-size: 12px; }
+    .about-matter .topDiv .img-exp5 {
+      list-style-type: none;
+      font-weight: normal;
+      padding-left: 0px; }
+    .about-matter .topDiv .img-exp6 {
+      font-size: 12px; }
+    .about-matter .topDiv .img-exp7 {
+      list-style-type: none;
+      padding-left: 0px; }
+
+.about-explore {
+  width: 100%;
+  background-color: #fcfcfc;
+  padding-top: 5%; }
+  .about-explore h2 {
+    font-family: Roboto;
+    color: #030303;
+    text-align: center; }
+  .about-explore .style-common ul {
+    list-style-type: none;
+    padding-left: 0px; }
+    .about-explore .style-common ul li {
+      float: left;
+      line-height: 3.33;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 600; }
+  .about-explore h3 {
+    font-family: Roboto;
+    font-size: 28px;
+    line-height: 1.67;
+    color: #33333a;
+    float: left; }
+  .about-explore h4 {
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 1.67;
+    color: #33333a;
+    float: left; }
+  .about-explore p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.56;
+    color: #33333a;
+    float: left; }
+  .about-explore .btn {
+    background-color: #33333a;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 43%;
+    margin-right: 43%; }
+
+h2 {
+  font-family: Roboto;
+  color: #030303;
+  text-align: center; }
+
+.about-shop {
+  width: 100%;
+  float: left;
+  padding: 5%; }
+  .about-shop .content-shop {
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .about-shop .content-shop {
+        width: 748px; } }
+    @media screen and (min-width: 1024px) {
+      .about-shop .content-shop {
+        width: 1004px; } }
+    @media screen and (min-width: 1280px) {
+      .about-shop .content-shop {
+        width: 1260px; } }
+    .about-shop .content-shop .box {
+      float: left;
+      position: relative;
+      width: 50%; }
+      @media screen and (min-width: 768px) {
+        .about-shop .content-shop .box {
+          width: 249.33333px; } }
+      @media screen and (min-width: 1024px) {
+        .about-shop .content-shop .box {
+          width: 251px; } }
+      @media screen and (min-width: 1280px) {
+        .about-shop .content-shop .box {
+          width: 315px; } }
+      .about-shop .content-shop .box .rectangle1 {
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        color: #030303; }
+      .about-shop .content-shop .box a {
+        display: block; }
+      .about-shop .content-shop .box img {
+        width: 100%;
+        padding: 10px; }
+
+.about-video {
+  width: 100%;
+  float: left;
+  padding-top: 5%; }
+  .about-video .content-video {
+    margin: 0 auto;
+    /*         .img4{
+            left: 36%;
+            margin-top: 19%;
+            position: absolute;
+        } */ }
+    @media screen and (min-width: 768px) {
+      .about-video .content-video {
+        width: 748px; } }
+    @media screen and (min-width: 1024px) {
+      .about-video .content-video {
+        width: 1004px; } }
+    @media screen and (min-width: 1280px) {
+      .about-video .content-video {
+        width: 1260px; } }
+    .about-video .content-video .box2 {
+      float: left;
+      position: relative; }
+    .about-video .content-video img {
+      width: 100%;
+      padding: 10px; }
+    .about-video .content-video .btn2 {
+      background-color: #33333a;
       color: #ffffff;
-      margin: 175px 149px 265px 833px;
-      position: absolute; }
-    html .img .shop-now {
-      width: 79px;
-      height: 20px;
       font-family: Roboto;
       font-size: 12px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.67;
       letter-spacing: 2px;
       text-align: center;
-      color: #ffffff;
-      position: absolute;
-      margin: 361px 568px 219px 832.5px; }
-    html .img .back {
-      width: 50px;
-      height: 90px;
-      border-radius: 0px 45px 45px 0px;
-      background-color: rgba(0, 0, 0, 0.4);
-      position: absolute;
-      margin-top: 254px;
-      margin-bottom: 256px; }
-      html .img .back .left-arrow {
-        width: 30px;
-        height: 15px;
-        transform: rotate(-90deg);
-        border: solid 1px #ffffff;
-        position: absolute;
-        margin: 37.5px 7.5px 37.5px 2.5px; }
-    html .img .next {
-      width: 50px;
-      height: 90px;
-      border-radius: 45px 0px 0px 45px;
-      background-color: rgba(0, 0, 0, 0.4);
-      position: absolute;
-      margin-top: 255px;
-      margin-bottom: 255px;
-      margin-left: 1390px; }
-  html .content {
-    width: 1440px;
-    height: 1210px;
-    background-color: #fcfcfc;
-    position: relative;
-    margin-top: 720px; }
-    html .content p {
-      width: 165px;
-      height: 60px;
-      font-family: Roboto;
-      font-size: 42px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.43;
-      letter-spacing: normal;
-      text-align: center;
-      color: #33333a;
-      margin: 63px 637.5px 0px 637.5px; }
-    html .content .list-clothes {
-      position: absolute;
-      margin-left: 150px;
-      margin-right: 149px; }
-      html .content .list-clothes p {
-        width: 263px;
-        height: 50px;
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.56;
-        letter-spacing: normal;
-        color: #33333a;
-        margin-left: 0px;
-        margin-top: 13px;
-        float: left;
-        text-align: left; }
-      html .content .list-clothes .price {
-        width: 263px;
-        height: 30px;
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 2.14;
-        letter-spacing: normal;
-        color: #33333a;
-        margin-top: 0px; }
-  html .about-matter p {
-    width: 246px;
-    height: 60px;
+      margin-left: 43%;
+      margin-right: 43%; }
+
+.logo-box {
+  position: relative;
+  width: 100%; }
+  .logo-box img {
+    width: 100%; }
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #33333a;
+  float: left; }
+  footer .row {
+    margin-left: 10%; }
+  footer h6 {
     font-family: Roboto;
-    font-size: 42px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    text-align: center;
-    color: #33333a;
-    margin: 0px 596.5px 27px 597.5px; }
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.67;
+    margin-top: 10%; }
+  footer ul {
+    list-style-type: none;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.79;
+    padding: 0px;
+    color: #dedede; }
+    footer ul img {
+      float: left;
+      padding: 3%; }
+  footer .row8 .row9 {
+    margin-left: 10%;
+    margin-top: 5%; }
+  footer .col-sm-4 {
+    float: left; }
+  footer .email {
+    border: solid 1px #666666; }
+  footer .btn3 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 2px; }
+  footer .btn-subscribe {
+    margin: 34%; }
+  footer p {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #dedede;
+    text-align: center; }

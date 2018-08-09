@@ -1,57 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
+    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <link href="main.js" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
+
     <head>
         <div class="top">
-            <p>Free shipping for orders above USD 150</p>
+            <h4>Free shipping for orders above USD 150</h4>
         </div>
-        <div class="menu">
-            <img src="img/matter.png" class="matter">
-            <img src="img/shop.png" class="shop">
-            <img src="img/fabric.png" class="fabric">
-            <img src="img/journal.png" class="journal">
-            <img src="img/about.png" class="about">
-            <img src="img/login.png" class="login">
-            <img src="img/search.png" class="search">
-            <img src="img/like.png" class="like">
-            <img src="img/bag.png" class="bag">
-        </div>
+        <nav class="menu">
+            <ul id="nav1">
+                <li>
+                    <img class="matter" src="img/matter.png"></img>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a class="shop">SHOP</a>
+                </li>
+                <li>
+                    <a class="fabric">FABRIC</a>
+                </li>
+                <li>
+                    <a class="journal">JOURNAL</a>
+                </li>
+                <li>
+                    <a class="about">ABOUT</a>
+                </li>
+            </ul>
+
+            <ul id="nav2">
+                <li>
+                    <a class="login">LOGIN</a>
+                </li>
+                <li>
+                    <img class="search" src="img/search.png">
+                </li>
+                <li>
+                    <img class="like" src="img/like.png">
+                </li>
+                <li>
+                    <img class="bag" src="img/bag.png">
+                </li>
+            </ul>
+        </nav>
     </head>
-    <div class="img">
-        <img src="img/homepage_image.png" class="homepageImg">
+    <div class="slides">
+        <img class="myslides" src="img/homepage_image.png">
         <div class="parfume">Parfume Tips Tricks</div>
-        <div class="shop-now">SHOP NOW <hr></div>
-        <div class="back">
-            <div class="left-arrow"></div>
+        <div class="shop-now">SHOP NOW
+            <hr>
         </div>
-        <div class="next">
-            <div class="next-arrow"></div>
-        </div>
+        <button class="left" onclick="left-btn">&#10094;</button>
+        <button class="right" onclick="right-btn">&#10095;</button>
     </div>
+
+
     <div class="content">
-        <p>Featured</p>
-        <div class="list-clothes">
-            <img src="img/img-clothes/img1.png">
-            <p>Pueraria Mirifica And Study Phyto Estrogens</p>
-            <p class="price">$599.00</p>
-            <img src="img/img-clothes/img2.png">
-            <img src="img/img-clothes/img3.png">
-            <img src="img/img-clothes/img4.png">
-            <img src="img/img-clothes/img5.png">
-            <img src="img/img-clothes/img6.png">
-            <img src="img/img-clothes/img7.png">
+        <h2>Featured</h2>
+        <div class="con">
+            <div class="box1">
+                <div class="new">NEW</div>
+                <a href="">
+                    <img src="img/img-clothes/img1.png">
+                    <h4>Pueraria Mirifica And Study Phyto Estrogens</h4>
+                    <div class="price">$599.00</div>
+                </a>
+            </div>
+            <div class="box1">
+                <div class="new">NEW</div>
+                <div class="view">QUICK VIEW</div>
+                <a href="">
+                    <img src="img/img-clothes/img2.png">
+                    <h4>Pueraria Mirifica And Study Phyto Estrogens</h4>
+                    <div class="price">$599.00</div>
+                </a>
+            </div>
+            <div class="box1">
+                <div class="new">NEW</div>
+                <a href="">
+                    <img src="img/img-clothes/img3.png">
+                    <h4>Pueraria Mirifica And Study Phyto Estrogens</h4>
+                    <div class="price">$599.00</div>
+                </a>
+            </div>
+            <div class="box1">
+                <div class="new">NEW</div>
+                <a href="">
+                    <img src="img/img-clothes/img4.png">
+                    <h4>Pueraria Mirifica And Study Phyto Estrogens</h4>
+                    <div class="price">$599.00</div>
+                </a>
+            </div>
+            <div class="box1">
+                <div class="new">NEW</div>
+                <a href="">
+                    <img src="img/img-clothes/img5.png">
+                    <h4>Pueraria Mirifica And Study Phyto Estrogens</h4>
+                    <div class="price">$599.00</div>
+                </a>
+            </div>
+            <div class="box1">
+                <div class="new">NEW</div>
+                <a href="">
+                    <img src="img/img-clothes/img6.png">
+                    <h4>Pueraria Mirifica And Study Phyto Estrogens</h4>
+                    <div class="price">$599.00</div>
+                </a>
+            </div>
+            <div class="box1">
+                <div class="new">NEW</div>
+                <a href="">
+                    <img src="img/img-clothes/img7.png">
+                    <h4>Pueraria Mirifica And Study Phyto Estrogens</h4>
+                    <div class="price">$599.00</div>
+                </a>
+            </div>
+            <div class="box1">
+                <div class="new">NEW</div>
+                <a href="">
+                    <img src="img/img-clothes/img2.png">
+                    <h4>Pueraria Mirifica And Study Phyto Estrogens</h4>
+                    <div class="price">$599.00</div>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="about-matter">
-        <p>About Matter</p>
+
+    <div class="about-matter container">
+        <h2>About Matter</h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <img class="img-about" src="img/about-matter.png">
+            </div>
+
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <div class="topDiv">
+                    <div class="row">
+                        <h5 class="img-common">Our mission is threefold - to foster designer-artisan collaborations, inspire consumers to value
+                            provenance and process, and pioneer industry change and sustainability for rural textile communities.
+                        </h5>
+                    </div>
+                    <div class="row">
+                        <h5 class="img-common img-fontType img-exp2">ARTISAN EMPLOYMENT DAYS CREATED</h5>
+                    </div>
+                    <div class="row">
+                        <h5 class="img-common img-exp3">123456</h5>
+                    </div>
+                    <div class="row">
+                        <h5 class="img-common img-fontType img-exp4">COUNTRIES INVOLVED TO DATE</h5>
+                    </div>
+                    <div class="row">
+                        <ul class="img-common img-exp5">
+                            <li>India</li>
+                            <li>China</li>
+                            <li>Sri Lanka</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <h5 class="img-common img-fontType img-exp6">#MATTERTRIBE</h5>
+                    </div>
+                    <div class="row">
+                        <ul class="img-common img-exp7">
+                            <li>12 designers</li>
+                            <li>12 Factories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-explore container">
+        <h2>Explore</h2>
+        <div class="row">
+            <div class="style-common col-sm-6 col-md-6 col-lg-6">
+                <hr>
+                <div class="row-a">
+                    <ul>
+                        <li class="row1">FIELDTESTED</li>
+                        <li class="row2"> · </li>
+                        <li class="row3">JANUARY 19, 2017</li>
+                    </ul>
+                </div>
+                <div class="row-b">
+                    <h3>Connected Clothing: Raye Padit</h3>
+                </div>
+                <div class="row-c">
+                    <p>As a voice for conscious fashion, Raye Padit is motivated by the belief that one person’s actions, no
+                        matter how small, holds great impact. This core ideal has driven him to start his three passion projects:
+                        Connected Threads Asia, PeyaR, and Swagalls. </p>
+                </div>
+                <div class="row-d">
+                    <img class="row4" src="img/rec1img.png">
+                </div>
+            </div>
+
+            <div class="style-common col-sm-6 col-md-6 col-lg-6">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <hr>
+                        <div class="row-e">
+                            <ul>
+                                <li class="row5">FIELDTESTED</li>
+                                <li class="row6"> · </li>
+                                <li class="row7">JANUARY 19, 2017</li>
+                            </ul>
+                        </div>
+                        <div class="row-f">
+                            <h4>Kérastase: A Collaboration</h4>
+                        </div>
+                        <div class="row-g">
+                            <img src="img/rec2img.png">
+                        </div>
+                        <hr>
+                        <div class="row-ı">
+                            <ul>
+                                <li class="row5">FIELDTESTED</li>
+                                <li class="row6"> · </li>
+                                <li class="row7">JANUARY 19, 2017</li>
+                            </ul>
+                        </div>
+                        <div class="row-l">
+                            <h4>Remarkable Resilience: Grace Kim</h4>
+                        </div>
+                        <div class="row-i">
+                            <p>A woman in my life who has shown remarkable resilience is my best friend Grace. Since she was
+                                a kid, she struggled with general anxiety disorder and panic disorder.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <hr>
+                        <div class="row-h">
+                            <ul>
+                                <li class="row5">FIELDTESTED</li>
+                                <li class="row6"> · </li>
+                                <li class="row7">JANUARY 19, 2017</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Jaclynn Seah</h4>
+                        </div>
+                        <div>
+                            <p>Jaclynn’s wandering spirit has brought her from the lush greenery of South America to the craters
+                                of Indonesia.</p>
+                        </div>
+                        <div class="row-k">
+                            <ul>
+                                <li class="row5">FIELDTESTED</li>
+                                <li class="row6"> · </li>
+                                <li class="row7">JANUARY 19, 2017</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>How To Wear The Lounge Lunghi</h4>
+                        </div>
+                        <div>
+                            <img src="img/rec3icon.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn">SEE THE JOURNAL</button>
+        </div>
+    </div>
+
+    <div class="about-shop">
+        <h2>Shop</h2>
+        <div class="content-shop">
+            <div class="box">
+                <a href="">
+                    <img src="img/shop/pants.png">
+                    <div class="rectangle1">
+                        <p>Pants</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="">
+                    <img src="img/shop/jumpsuits.png">
+                    <div class="rectangle1">
+                        <p>Jumpsuits</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="">
+                    <img src="img/shop/tops.png">
+                    <div class="rectangle1">
+                        <p>Tops</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="">
+                    <img src="img/shop/accessories.png">
+                    <div class="rectangle1">
+                        <p>Accossories</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-video">
+        <h2>Recommended Videos</h2>
+        <div class="content-video">
+            <div class="box2">
+                <img src="img/recommended/1.png">
+                <a href="">
+                    <!-- <img class="img4" src="img/recommended/4.png"> -->
+                </a>
+            </div>
+            <div class="box2">
+                <img src="img/recommended/2.png">
+                <a href="">
+                    <!-- <img class="img4" src="img/recommended/4.png"> -->
+                </a>
+            </div>
+            <div class="box2">
+                <img src="img/recommended/3.png">
+                <a href="">
+                    <!-- <img class="img4" src="img/recommended/4.png"> -->
+                </a>
+            </div>
+            <div>
+                <button class="btn2">SHOW MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo container">
+        <h2>As Seen On</h2>
+        <div class="logo-box">
+            <img src="img/seen.png">
+        </div>
 
     </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="row8">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <h6>Catagories</h6>
+                        <ul>
+                            <li>About us</li>
+                            <li>Testimonials</li>
+                            <li>Contact</li>
+                            <li>Journal </li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <h6>Partners</h6>
+                        <ul>
+                            <li>Support</li>
+                            <li>Shipping & Returns</li>
+                            <li>Size Guide</li>
+                            <li>Product Care</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <h6>Contact</h6>
+                        <ul>
+                            <li>26A Pagoda St, TANGS</li>
+                            <li>Singapore, 058187</li>
+                            <br>
+                            <li>+65 6221 5462</li </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <div class="row9">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <h6>Subscribe to newsletter</h6>
+                        <ul>
+                            <li class="email">
+                                <p>ENTER YOUR EMAİL</p>
+                            </li>
+                            <li>
+                                <img src="img/face_icon.png">
+                            </li>
+                            <li>
+                                <img src="img/twitter-icon.png">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="btn-subscribe">
+                            <button class="btn3">SUBSCRIBE</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>© Copyright Matter PTE LTD 2017</p>
+        </div>
+
+    </footer>
 </body>
+
 </html>
