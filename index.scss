@@ -20,6 +20,8 @@ $list : #dedede;
         font-size: 12px;
         position: absolute;
         margin-left: 50%;
+        padding: 1%;
+
     }            
 }
 
@@ -42,6 +44,55 @@ $list : #dedede;
             margin-top: 37px;
             float: left;
             margin-left: 34px;
+            display: block;
+        }
+        
+        .dropdown-content {
+            width: 100%;
+            float: left;
+            display: none;
+            position: absolute;
+            background-color: $white;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 5.9%;
+            left: 0;
+
+            &.show {
+                display: block;
+            }
+            
+            .apl{
+                padding-left: 14%;
+            }
+
+            ul{
+                list-style-type: none;
+                float: left;
+                
+                h4{
+                    font-family: Roboto;
+                    font-size: 24px;
+                    line-height: 1.67;
+                    color: $dark-grey;
+                }
+                li{
+                    font-family: Roboto;
+                    font-size: 12px;
+                    line-height: 3.33;
+                    letter-spacing: 1px;
+                    color: #33333a;
+                
+                }
+            }
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
         }
 
         .fabric{
@@ -168,6 +219,9 @@ $list : #dedede;
             float: left;
             position: relative;
             width: 50%;
+            :hover{
+                opacity: 0.5;
+            }
 
             @media screen and (min-width: 768px) {
                 width: (748px / 3);
@@ -192,21 +246,21 @@ $list : #dedede;
                 color: $white;
             }
             .view{
-                width: 180px;
-                height: 30px;
+                width: 50%;
                 position: absolute;
                 background-color: $dark-grey;
                 color: $white;
                 text-align: center;
-                margin-left: 57px;
+                margin-left: 25%;
                 top: 50%;
-                padding-top: 10px;
-                display: block;
-                margin-top: -25px;
+                padding: 2%;
+                font-size: 12px;
+
             }
             a{
                 display: block;
                 text-decoration: none;
+
                 h4{
                     font-family: Roboto;
                     font-size: 16px;
@@ -224,6 +278,7 @@ $list : #dedede;
                 img{
                     padding: 10px;
                     width: 100%;
+
                 }
             }
         }
@@ -233,12 +288,15 @@ $list : #dedede;
 .about-matter{
     width: 100%;
     background-color: $white;
+
     
     h2{
         font-family: Roboto;
         color: $black;
         font-weight: 500;
         text-align: center;
+        padding-top: 50%;
+
     }
 
     .img-about{
@@ -518,9 +576,9 @@ footer{
     }
     .btn3{
         font-size: 12px;
-    font-weight: 600;
-    line-height: 1.67;
-    letter-spacing: 2px;
+        font-weight: 600;
+        line-height: 1.67;
+        letter-spacing: 2px;
     }
     .btn-subscribe{
         margin: 34%;
@@ -532,3 +590,220 @@ footer{
         text-align: center;
     }
 }
+
+///////Product Listing////////
+
+.slides2{
+    img{
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+    .appearel{
+       position: absolute;
+       margin-left: 32%;
+       margin-top: 20%;
+       font-size: 60px;
+       float: left;
+    }
+    .text{
+       position: absolute;
+       font-family: Roboto;
+       font-size: 18px;
+       line-height: 1.67;
+       margin-left: 23%;
+       margin-top: 30%;
+       width: 36%;
+       text-align: center;
+       color: $black;   
+    }
+}
+
+.rectangle-4{
+    width: 100%;
+    float: left;
+
+    .gender{
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 2.22;
+        color: $black;
+        font-weight: 300;
+        padding: 2%;
+        margin-left: 30%;
+
+    }
+    .price{
+        font-family: Roboto;
+        font-size: 14px;
+        color: #515356;
+        padding: 2%;
+        border: 1px solid $list;
+        margin-top: 4%;
+        display: inline-block;
+
+    }
+
+}
+
+.product_listing{
+    width: 100%;
+    background-color: $white;
+    float: left;
+    padding-top: 5%;
+
+    .row{
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            width: 748px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 1004px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 1260px;
+        }   
+    }
+
+
+    .box_list{
+        float: left;
+            position: relative;
+            width: 30%;
+            :hover{
+                opacity: 0.5;
+            }
+
+            .new{
+                background-color: $turuncu;
+                width: 50px;
+                height: 20px;
+                position: absolute;
+                margin-top: 20px;
+                margin-left: 20px;
+                text-align: center;
+                color: $white;
+            }
+            .view{
+                width: 50%;
+                position: absolute;
+                background-color: $dark-grey;
+                color: $white;
+                text-align: center;
+                margin-left: 25%;
+                top: 50%;
+                padding: 2%;
+                font-size: 12px;
+
+            }
+            a{
+                display: block;
+                text-decoration: none;
+
+                h4{
+                    font-family: Roboto;
+                    font-size: 16px;
+                    color: $dark-grey;
+                    width: 263px;
+                    margin-left: 10px;
+                }
+                .price{
+                    font-family: Roboto;
+                    font-size: 14px;
+                    color: $dark-grey;
+                    font-weight: bold;
+                    margin-left: 10px;
+                }
+                img{
+                    padding: 10px;
+                    width: 100%;
+
+                }
+            }
+
+        }
+
+        h3{
+            font-family: Roboto;
+            font-size: 12px;
+            line-height: 3.33;
+            letter-spacing: 1px;
+            color: $dark-grey;
+            margin-left: 30%;
+            float: left;
+        }
+        .reset{
+            color: #ff6008;
+            float: left;
+        }
+        h4{
+            font-family: Roboto;
+            font-size: 24px;
+            line-height: 1.67;
+        }
+        ul{
+            list-style-type: none;
+            li{
+                font-family: Roboto;
+                font-size: 12px;
+                line-height: 3.33;
+                letter-spacing: 1px;
+                color: #33333a;
+            }
+        }
+
+        .sizes{
+            position: relative;
+            width: 100%;
+            float: left;
+
+            h5{
+                font-family: Roboto;
+                font-size: 12px;
+                line-height: 3.33;
+                letter-spacing: 1px;
+                color: $dark-grey;
+                margin-left: 10%;
+
+            }
+            .rec{
+                width: 10%;
+                background-color: $white;
+                border: solid 1px #f3f3f3;
+                float: left;
+                text-align: center;
+                margin-left: 10%;
+                color: #515356;
+                font-family: Roboto;
+                font-size: 14px;
+            }
+
+        }
+        .guide{
+            float: left;
+            font-family: ProximaNova;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 3.33;
+            letter-spacing: 1px;
+            color: $dark-grey;
+            margin-left: 10%;
+        }
+        
+    }
+    .loading{
+        p{
+            font-family: ProximaNova;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.67;
+            letter-spacing: 2px;
+            text-align: center;
+            color: $dark-grey;
+            margin-top: 5%;
+           
+        }
+    }
